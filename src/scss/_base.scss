@@ -1,0 +1,16 @@
+:root{
+  --bs-nav-link-font-size: 0.95rem;
+  --link-color: rgba(101, 100, 100, 1);
+}
+
+body {
+  @include font-inter(400);
+  font-size: $font-size-body;
+}
+
+// .container {
+//   width: 100%;
+//   max-width: $container-width;
+//   margin: 0 auto;
+//   padding: $container-padding;
+// }

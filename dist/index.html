@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Webpack</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="visually-hidden-focusable" href="#content"
+      >Skip to main content</a
+    >
+
+    <!-- Header with Navbar -->
+    <header class="floating">
+      <nav class="navbar navbar-expand-lg w-100">
+        <div class="container navbar__container">
+          <div class="navbar__left">
+            <a class="navbar__brand" href="#">
+              <img src="assets/images/logo.svg" alt="Netbook" class="logo" />
+            </a>
+            <div class="collapse navbar-collapse ms-5" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Community
+                  </a>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="navbarDropdownMenuLink"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="#">Friends & Family</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Countries</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Planets</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Events</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar__right">
+            <div class="input-group">
+              <span class="input-group-text" id="search-input">@</span>
+              <input type="text" class="form-control filled-textfield" placeholder="Search Here" aria-label="SearchHere" aria-describedby="search-input">
+            </div>
+            <button class="btn btn-primary shadow-lg">Login</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- <header class="floating">
+      <nav class="nav navbar">
+        <div class="container">
+          <div class="navbar__left">
+            <div class="navbar-brand">
+              <a href="/#">
+                <img src="assets/images/logo.svg" alt="Netbook" class="logo" />
+              </a>
+            </div>
+            <div class="navbar__menu">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a href="/#">Home</a>
+              <a href="/#">Community</a>
+              <a href="/#">Blog</a>
+              <a href="/#">Events</a>
+            </div>
+          </div>
+          <div class="navbar__right">
+            <a href="/#">Search Here</a>
+            <a href="/#">Log In</a>
+          </div>
+        </div>
+      </nav>
+    </header> -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>

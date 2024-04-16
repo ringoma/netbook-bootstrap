@@ -1,0 +1,43 @@
+// Base Colors
+$background-color: rgb(255, 255, 255);
+$primary-color: #217bf4;
+$link-color: rgba(43, 43, 57, 1);
+$secondary-color: #2ecc71;
+
+$input-border-color:rgb(229, 229, 229);
+
+
+
+// Base Width
+$container-width: 1200px;
+$container-padding: 2rem;
+
+
+// Typography
+$font-family-stack: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-size-heading: 24px;
+$font-weight-heading: 700;
+
+$font-size-subtitle: 20px;
+$font-size-body: 16px;
+$font-weight-normal: 400;
+
+$font-size-menu: 14px;
+$font-weight-menu: 400;
+$font-weight-menu-current: 600;
+
+$font-size-description: 14px;
+$font-size-small: 12px;
+
+$padding: 2rem;
+
+$gap: 1rem;
+
+// Component: Header
+$header-height: 90px;
+$header-background: $background-color;
+
+// Component: Footer
+$footer-height: 50px;
+$footer-background: #333;

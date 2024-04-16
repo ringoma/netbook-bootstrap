@@ -1,0 +1,9 @@
+.input-style-filled {
+  border: none;
+  border-radius: none !important;
+  border-bottom: 1px solid $input-border-color;
+
+  &:focus{
+    box-shadow:none;
+  }
+}

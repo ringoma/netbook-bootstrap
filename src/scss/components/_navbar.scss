@@ -1,0 +1,36 @@
+$navItemGap: $spacer * 3;
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar__left {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: $navItemGap;
+}
+
+ul.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: $navItemGap;
+}
+
+.navbar-nav .nav-link {
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: 500;
+  color: var(--link-color);
+  transition: color 0.3s;
+  letter-spacing: 0.05rem;
+}
+
+.navbar-nav .nav-link.active {
+  font-weight: 600;
+}

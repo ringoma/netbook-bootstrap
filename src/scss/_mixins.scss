@@ -1,0 +1,11 @@
+@mixin border-primary-opacity($opacity: 1) {
+  border-color: rgba($primary-color, $opacity);
+}
+
+@mixin font-inter($weight:400) {
+  font-family: $font-family-stack;
+  font-optical-sizing: auto;
+  font-weight: $weight;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
