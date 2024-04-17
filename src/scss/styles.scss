@@ -14,9 +14,10 @@
 // Sections
 @import 'sections/intro';
 @import 'sections/about';
-// @import 'sections/team';
+// @import 'sections/members';
 
 // UI Components
+@import 'components/list';
 @import 'components/navbar';
 @import 'components/cards';
 @import 'components/cards--member';

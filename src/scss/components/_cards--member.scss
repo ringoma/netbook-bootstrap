@@ -1,5 +1,5 @@
-.card-member-container{
-  margin:$spacer*2 0;
+.card-member-container {
+  margin: $spacer * 2 0;
 }
 
 .card.card-member {
@@ -8,12 +8,15 @@
   gap: 1rem;
   padding: 1.5rem;
   border-radius: $border-radius;
-  box-shadow: $box-shadow-lg;
   background-color: $background-color;
   transition: all 0.3s ease-in-out;
 
-  &:hover {
-    transform: translateY(-0.5rem);
+  &.active {
+    box-shadow: $box-shadow-lg;
+  }
+
+  &.active {
+    transform: translateY(-0.75rem);
   }
 
   .card-member__info {
@@ -29,9 +32,10 @@
       font-weight: 600;
     }
 
-    .card-member__position {
+    .card-member__social {
       font-size: 0.9rem;
       font-weight: 400;
+      color: $body-color-light;
     }
   }
 }

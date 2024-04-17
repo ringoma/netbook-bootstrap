@@ -1,20 +1,37 @@
 footer {
+  @include flex-center;
+  
   width: 100%;
-  height: $footer-height;
+  min-height: $footer-height;
   background: $footer-background-color;
-
-  padding: $spacer * 1.5 0;
 }
 
 .footer__nav {
-  display: flex;
-  justify-content: center;
+  @include flex-center;
+  flex-grow: 1;
   text-decoration: none;
+
   a {
     color: $white;
   }
+
   &--social {
-    gap: 0.25rem;
+    @include flex-center;
+
+    .nav-link {
+      padding: $social-padding-gap;
+    }
+
+    &:hover .nav-item {
+      opacity: 0.6;
+    }
+
+    .nav-item {
+      transition: opacity 0.3s ease-out;
+      &:hover {
+        opacity: 1;
+      }
+    }
 
     .social-icon {
       color: $white;

@@ -1,7 +1,7 @@
 .tab-container.nav {
   display: inline-flex;
   padding: $spacer*0.5;
-  background-color: rgba(33, 123, 244, 0.06);
+  background-color: rgba($primary-color, .06);
   border-radius: $border-radius;
   margin:$spacer*2 0;
 

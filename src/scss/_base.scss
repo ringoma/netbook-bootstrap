@@ -13,6 +13,23 @@ section{
   padding-bottom: $section-padding;
 }
 
+.logo{
+  width:100%;
+  max-width: 144px;
+  height:auto;
+}
+
+.pointer-events-none{
+  pointer-events: none;
+}
+
+.lead{
+  color:$body-color-light;
+}
+
+.text-max-width{
+  max-width: 32.5rem;
+}
 // .container {
 //   width: 100%;
 //   max-width: $container-width;

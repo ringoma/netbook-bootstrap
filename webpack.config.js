@@ -1,5 +1,5 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const HtmlWebpackInlineSVGPlugin = require("html-webpack-inline-svg-plugin");
+// const HtmlWebpackInlineSVGPlugin = require("html-webpack-inline-svg-plugin");
 const path = require("path");
 
 module.exports = {
@@ -12,9 +12,19 @@ module.exports = {
     static: path.resolve(__dirname, "dist"),
     port: 8000,
     hot: true,
+    // devMiddleware: {
+    //   writeToDisk: true,
+    // },
   },
   module: {
     rules: [
+      {
+        test: /\.ejs$/,
+        loader: "ejs-loader",
+        options: {
+          esModule: false,
+        },
+      },
       {
         test: /\.(scss|css)$/,
         use: [
@@ -39,8 +49,11 @@ module.exports = {
       },
     ],
   },
-//   plugins: [new HtmlWebpackPlugin({
-//     template: './src/index.html',
-//     filename:'./index.html'
-// }), new HtmlWebpackInlineSVGPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.ejs",
+      filename: "./index.html",
+    }),
+    // new HtmlWebpackInlineSVGPlugin(),
+  ],
 };

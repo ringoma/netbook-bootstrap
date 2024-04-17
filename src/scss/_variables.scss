@@ -11,20 +11,25 @@
 $spacer: 1rem;
 
 // Base Colors
-$background-color: hsl(0, 0%, 100%);
-$primary-color: hsl(214, 91%, 54%);
-$btn-primary-color: hsl(214, 91%, 54%);
-$link-primary-color: hsl(240, 14%, 40%);
+$background-color: rgb(255, 255, 255);
+$primary-color: rgb(31, 123, 244);
+
+$body-color-light: rgba(101, 100, 100, 1);
+
+// $body-color: rgba(101, 100, 100, 1);
+
+$btn-primary-color: $primary-color;
+$link-primary-color: rgb(88, 88, 116);
 
 $secondary-color: #2ecc71;
 
-$placeholder-primary-color: hsl(240, 14%, 50%);
-$icon-primary-color: hsl(240, 14%, 70%);
+$placeholder-primary-color: rgb(110, 110, 145);
+$icon-primary-color: rgb(168, 168, 189);
 
 $border-color: rgb(229, 229, 229);
 $card-border-color: rgb(240, 240, 240);
 
-$border-radius:.95rem;
+$border-radius: 0.95rem;
 $input-border-color: rgb(229, 229, 229);
 $input-filled-border: 1px solid $input-border-color;
 
@@ -38,6 +43,7 @@ $grid-gutter-width: 1.5rem;
 // Buttons
 
 // Typography
+
 $font-family-stack: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 $font-size-heading: 24px;
@@ -53,6 +59,21 @@ $font-weight-menu-current: 600;
 
 $font-size-description: 14px;
 $font-size-small: 12px;
+
+$headings-color: rgba(10, 9, 61, 1);
+
+$display-font-sizes: (
+  1: 3.5rem,
+  2: 2.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+);
+
+$display-font-weight: 700;
+$lead-font-size: 1.125rem;
+$lead-font-weight: 400;
 
 // Form typography
 $placeholder-font-size: 0.8rem;
@@ -73,14 +94,15 @@ $header-background-color: $background-color;
 // Component: Footer
 $footer-height: 172px;
 $footer-background-color: rgba(43, 43, 57, 1);
-;
+
+$social-padding-gap: 0.25rem;
 
 // Component: Cards
 $card-spacer-y: $spacer * 3;
 $card-spacer-x: $spacer * 3;
 
 // Shadow
-$box-shadow-lg:               0 1rem 3rem rgba(146, 165, 184, 0.14);
+$box-shadow-lg: 0 1rem 3rem rgba(146, 165, 184, 0.14);
 
 // $card-spacer-y:                     $spacer * 10;
 // $card-spacer-x:                     $spacer;
