@@ -23,12 +23,25 @@ section{
   pointer-events: none;
 }
 
+.sub-heading{
+  font-size:1.125rem;
+}
+
+.section-text{
+  line-height: $text-line-height;
+}
+
 .lead{
-  color:$body-color-light;
+  color:$secondary-color;
+  line-height: 1.8;
 }
 
 .text-max-width{
   max-width: 32.5rem;
+}
+
+.link-dark{
+  color: $link-secondary-color;
 }
 // .container {
 //   width: 100%;

@@ -1,11 +1,27 @@
-.card.border-gradient {
-  border-image-source: linear-gradient(
-    180deg,
-    rgba(185, 185, 185, 0.0351) 0%,
-    rgba(94, 94, 94, 0.0999) 100%
-  );
-  box-sizing:border-box;
-  border-image-slice:30;
+.card-group {
+  &:hover .card:not(:hover) {
+    box-shadow: none;
+    a.btn-link {
+      color: $link-secondary-color;
+    }
+  }
+}
+.card:not(.card-blend) {
+  transition: all 0.3s ease-out;
+
+  a.btn-link {
+    color: $link-secondary-color;
+    transition: color 0.3s ease-out;
+  }
+
+  &.active,
+  &:hover {
+    box-shadow: $box-shadow-lg;
+
+    a.btn-link {
+      color: $primary-color;
+    }
+  }
 }
 
 .card-title {
@@ -14,11 +30,16 @@
   gap: 1rem;
 }
 
+.card-text {
+  line-height: $text-line-height;
+  margin: $spacer * 2 0;
+}
+
 .card-figure {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 
   .figure__avatars {
     img {

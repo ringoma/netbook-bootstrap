@@ -41,3 +41,11 @@ ul.navbar-nav {
 .padding-top-spacer{
   padding-top:$header-height;
 }
+
+.dropdown-toggle::after {
+  content: url("../../dist/assets/icons/icon-dropdown.svg");
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin: 10px 5px 0 10px;
+}
