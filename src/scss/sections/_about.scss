@@ -1,0 +1,32 @@
+#about {
+  .image-group-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 2rem;
+
+    grid-template:
+      "left right-top" 1fr
+      "left right-bottom" 1fr
+      / minmax(270px, 1fr) minmax(270px, 1fr);
+
+    .left {
+      grid-area: left;
+      justify-self: flex-end;
+    }
+
+    .right-top {
+      grid-area: right-top;
+    }
+
+    .right-bottom {
+      grid-area: right-bottom;
+    }
+    img {
+      max-width: 270px;
+      width: 100%;
+      height: auto;
+    }
+  }
+}

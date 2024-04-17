@@ -1,0 +1,23 @@
+footer {
+  width: 100%;
+  height: $footer-height;
+  background: $footer-background-color;
+
+  padding: $spacer * 1.5 0;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  a {
+    color: $white;
+  }
+  &--social {
+    gap: 0.25rem;
+
+    .social-icon {
+      color: $white;
+    }
+  }
+}

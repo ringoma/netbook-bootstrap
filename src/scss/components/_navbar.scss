@@ -1,4 +1,4 @@
-$navItemGap: $spacer * 3;
+$navItemGap: $spacer * 2;
 
 .navbar__container {
   display: flex;
@@ -14,7 +14,7 @@ $navItemGap: $spacer * 3;
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  gap: $navItemGap;
+  gap: $spacer * 4;
 }
 
 ul.navbar-nav {
@@ -25,12 +25,19 @@ ul.navbar-nav {
 
 .navbar-nav .nav-link {
   font-size: var(--bs-nav-link-font-size);
-  font-weight: 500;
-  color: var(--link-color);
+  font-weight: 400;
+  color: $link-primary-color;
   transition: color 0.3s;
-  letter-spacing: 0.05rem;
+
+  &:hover:not(.active){
+    color: $primary-color;
+  }
 }
 
 .navbar-nav .nav-link.active {
   font-weight: 600;
+}
+
+.padding-top-spacer{
+  padding-top:$header-height;
 }

@@ -2,10 +2,18 @@
   border-color: rgba($primary-color, $opacity);
 }
 
-@mixin font-inter($weight:400) {
+@mixin font-inter($weight: 400) {
   font-family: $font-family-stack;
   font-optical-sizing: auto;
   font-weight: $weight;
   font-style: normal;
   font-variation-settings: "slnt" 0;
+}
+
+@mixin input-style-filled() {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  border-bottom: $input-filled-border;
+  color: $link-primary-color;
 }

@@ -1,9 +1,26 @@
-.input-style-filled {
-  border: none;
-  border-radius: none !important;
-  border-bottom: 1px solid $input-border-color;
+.input-group-filled {
+  .input-group-text {
+    @include input-style-filled();
+    padding-right:0.3rem;
+    svg{
+      width:1.2rem;
+      height:1.2rem;
+      color:$icon-primary-color;
+    }
+  }
 
-  &:focus{
-    box-shadow:none;
+  input[type="text"] {
+    @include input-style-filled();
+    width:7.5rem;
+    padding-left:0.3rem;
+
+    &::placeholder {
+      color: $placeholder-primary-color;
+      font-size:$placeholder-font-size;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
   }
 }

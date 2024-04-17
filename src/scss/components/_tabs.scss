@@ -1,0 +1,16 @@
+.tab-container.nav {
+  display: inline-flex;
+  padding: $spacer*0.5;
+  background-color: rgba(33, 123, 244, 0.06);
+  border-radius: $border-radius;
+  margin:$spacer*2 0;
+
+  .nav-link {
+    padding: $spacer $spacer*2.5;
+    // border-radius: $border-radius;
+    // transition: background-color 0.3s;
+    &.active{
+      box-shadow: $box-shadow;
+    }
+  }
+}

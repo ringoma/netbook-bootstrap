@@ -1,17 +1,41 @@
+// Index
 // Base Colors
-$background-color: rgb(255, 255, 255);
-$primary-color: #217bf4;
-$link-color: rgba(43, 43, 57, 1);
+// Base Width
+// Buttons
+// Typography
+// Form typography
+// Component: Header
+// Component: Footer
+
+// Base
+$spacer: 1rem;
+
+// Base Colors
+$background-color: hsl(0, 0%, 100%);
+$primary-color: hsl(214, 91%, 54%);
+$btn-primary-color: hsl(214, 91%, 54%);
+$link-primary-color: hsl(240, 14%, 40%);
+
 $secondary-color: #2ecc71;
 
-$input-border-color:rgb(229, 229, 229);
+$placeholder-primary-color: hsl(240, 14%, 50%);
+$icon-primary-color: hsl(240, 14%, 70%);
 
+$border-color: rgb(229, 229, 229);
+$card-border-color: rgb(240, 240, 240);
 
+$border-radius:.95rem;
+$input-border-color: rgb(229, 229, 229);
+$input-filled-border: 1px solid $input-border-color;
 
 // Base Width
 $container-width: 1200px;
 $container-padding: 2rem;
 
+// Grid
+$grid-gutter-width: 1.5rem;
+
+// Buttons
 
 // Typography
 $font-family-stack: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -30,14 +54,48 @@ $font-weight-menu-current: 600;
 $font-size-description: 14px;
 $font-size-small: 12px;
 
+// Form typography
+$placeholder-font-size: 0.8rem;
+
 $padding: 2rem;
 
 $gap: 1rem;
 
+// Section
+$section-padding: 5rem;
+$section-margin: 5rem;
+
 // Component: Header
+$header-blur: 12px;
 $header-height: 90px;
-$header-background: $background-color;
+$header-background-color: $background-color;
 
 // Component: Footer
-$footer-height: 50px;
-$footer-background: #333;
+$footer-height: 172px;
+$footer-background-color: rgba(43, 43, 57, 1);
+;
+
+// Component: Cards
+$card-spacer-y: $spacer * 3;
+$card-spacer-x: $spacer * 3;
+
+// Shadow
+$box-shadow-lg:               0 1rem 3rem rgba(146, 165, 184, 0.14);
+
+// $card-spacer-y:                     $spacer * 10;
+// $card-spacer-x:                     $spacer;
+// $card-title-spacer-y:               $spacer * .5;
+// $card-title-color:                  null;
+// $card-subtitle-color:               null;
+// $card-border-width:                 var(--#{$prefix}border-width);
+$card-border-color: $card-border-color;
+$card-border-radius: $border-radius;
+// $card-box-shadow:                   null;
+// $card-inner-border-radius:          subtract($card-border-radius, $card-border-width);
+// $card-cap-padding-y:                $card-spacer-y * .5;
+// $card-cap-padding-x:                $card-spacer-x;
+// $card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03);
+// $card-cap-color:                    null;
+// $card-height:                       null;
+// $card-color:                        null;
+// $card-bg:                           var(--#{$prefix}body-bg);

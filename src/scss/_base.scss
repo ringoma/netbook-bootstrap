@@ -1,11 +1,16 @@
 :root{
   --bs-nav-link-font-size: 0.95rem;
-  --link-color: rgba(101, 100, 100, 1);
+  // --link-color: rgba(101, 100, 100, 1);
 }
 
 body {
   @include font-inter(400);
   font-size: $font-size-body;
+}
+
+section{
+  padding-top: $section-padding;
+  padding-bottom: $section-padding;
 }
 
 // .container {

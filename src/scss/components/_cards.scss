@@ -1,0 +1,36 @@
+.card.border-gradient {
+  border-image-source: linear-gradient(
+    180deg,
+    rgba(185, 185, 185, 0.0351) 0%,
+    rgba(94, 94, 94, 0.0999) 100%
+  );
+  box-sizing:border-box;
+  border-image-slice:30;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card-figure {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+
+  .figure__avatars {
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+    &.stack {
+      img:not(:first-child) {
+        margin-left: -0.75rem;
+        border-radius: 100%;
+        box-shadow: $box-shadow;
+      }
+    }
+  }
+}
