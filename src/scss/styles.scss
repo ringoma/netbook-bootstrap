@@ -5,6 +5,7 @@
 @import 'mixins';
 
 @import 'base';
+@import 'base-mobile';
 
 // Layout
 @import 'components/header';
@@ -19,8 +20,8 @@
 @import 'components/badge';
 @import 'components/list';
 @import 'components/navbar';
-@import 'components/navbar-mobile';
 @import 'components/navbar__dropdownmenu';
+@import 'components/navbar-offcanvas';
 @import 'components/cards';
 @import 'components/cards-member';
 @import 'components/tabs';

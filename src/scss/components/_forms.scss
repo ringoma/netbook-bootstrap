@@ -1,4 +1,6 @@
 .input-group-filled {
+  max-width:10rem;
+
   .input-group-text {
     @include input-style-filled();
     padding-right:0.3rem;

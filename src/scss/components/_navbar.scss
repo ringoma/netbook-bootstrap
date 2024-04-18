@@ -1,15 +1,11 @@
 .navbar {
-  // Base
-  .padding-top-spacer {
-    padding-top: $header-height;
-  }
-
+  // Button
   .btn {
     padding-top: $spacer * 0.9;
     padding-bottom: $spacer * 0.9;
   }
 
-  .navbar__brand{
+  .navbar__brand {
     &:focus-visible {
       @include focus-visible-shadow;
     }
@@ -32,30 +28,56 @@
     flex-shrink: 0;
     gap: $spacer * 4;
   }
+}
 
-  // Nav Menu List
-  ul.navbar-nav {
-    display: flex;
-    flex-direction: row;
-    gap: $spacer * 2;
+// Nav Menu List
+ul.navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: $spacer * 2;
 
-    .nav-link {
-      font-size: $nav-link-font-size;
-      font-weight: 400;
-      color: $link-primary-color;
-      transition: color 0.3s;
+  .nav-link {
+    font-size: $nav-link-font-size;
+    font-weight: 400;
+    color: $link-primary-color;
+    transition: color 0.3s;
 
-      &:hover:not(.active) {
-        color: $primary;
-      }
-
-      &.active {
-        font-weight: 600;
-      }
-
-      &:focus-visible {
-        @include focus-visible-shadow;
-      }
+    &:hover:not(.active) {
+      color: $primary;
     }
+
+    &.active {
+      font-weight: 600;
+    }
+
+    &:focus-visible {
+      @include focus-visible-shadow;
+    }
+  }
+}
+
+button.navbar-toggler {
+  width:$btn-navbar-toggler-size;
+  height:$btn-navbar-toggler-size;
+  border: none;
+
+  i {
+    font-size: $btn-navbar-toggler-icon-size;
+    transition:color .15s ease-out
+  }
+
+  &:hover {
+    color: $black;
+  }
+
+  &:active {
+    color: $link-secondary-color;
+    background-color:rgba($primary,0.1);
+  }
+  &:focus {
+    box-shadow: none;
+  }
+  &:focus-visible {
+    @include focus-visible-shadow;
   }
 }

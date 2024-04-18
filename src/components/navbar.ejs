@@ -44,29 +44,20 @@
       </div>
     </div>
     <div class="navbar__right d-none d-lg-flex">
-      <div class="input-group input-group-filled">
-        <span class="input-group-text" id="search-input">
-          <i class="bi-search"></i>
-        </span>
-        <input
-          type="text"
-          class="form-control text-filled"
-          placeholder="Search Here..."
-          aria-label="SearchHere"
-          aria-describedby="search-input"
-        />
-      </div>
-      <button class="btn btn-primary shadow">Log in</button>
+      <%= require("./search-input-field.ejs")() %>
+      <button class="btn btn-primary shadow btn-with-icon">
+        <i class="bi bi-door-open-fill"></i> Log in
+      </button>
     </div>
     <button
-      class="navbar-toggler"
+      class="navbar-toggler rounded-circle"
       type="button"
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasNavbar"
       aria-controls="offcanvasNavbar"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+    <i class="bi bi-list"></i>
     </button>
   </div>
 </nav>

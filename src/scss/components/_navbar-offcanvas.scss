@@ -1,0 +1,40 @@
+// Menu
+#offcanvasNavbar {
+  background: $background-color-gradient;
+  padding: $spacer;
+
+  ul.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer * 0.5;
+  }
+
+  button.btn-close {
+    position: absolute;
+    top: $spacer * 1.25;
+    right: $spacer * 2.5;
+    z-index: 10;
+    transform: scale(1);
+    padding:$spacer * .75;
+
+    &:active {
+      color:$secondary;
+      opacity:0.7;
+      background-color:rgba($secondary,0.1);
+      transform: scale(1.2);
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:focus-visible {
+      @include focus-visible-shadow;
+    }
+  }
+
+  .offcanvas-footer {
+    margin-top: auto;
+    padding: $spacer;
+  }
+}

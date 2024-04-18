@@ -24,6 +24,10 @@ section{
   max-width: 32.5rem;
 }
 
+.padding-top-spacer {
+  padding-top: $header-height;
+}
+
 // Typography
 .sub-heading{
   font-size:1.125rem;

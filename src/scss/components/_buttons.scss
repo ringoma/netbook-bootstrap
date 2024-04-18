@@ -1,9 +1,9 @@
 .btn {
   white-space: nowrap;
-  &.btn-primary{
-    &:active{
+  &.btn-primary {
+    &:active {
       border-color: transparent;
-      background-color: rgba($primary, .8);
+      background-color: rgba($primary, 0.8);
     }
     &:focus {
       box-shadow: none;
@@ -46,15 +46,25 @@
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
-    i {
-      transition: transform 0.3s cubic-bezier(0.64, -0.01, 0.29, 1.02);
-    }
-    &:hover,
-    &:focus,
-    &:focus-visible {
+
+    &.icon-append {
       i {
-        transform: translateX(0.5rem);
+        transition: transform 0.3s cubic-bezier(0.64, -0.01, 0.29, 1.02);
+      }
+
+      &:hover,
+      &:focus,
+      &:focus-visible {
+        i {
+          transform: translateX(0.5rem);
+        }
       }
     }
+  }
+
+  &.btn-primary.btn-sm {
+    padding: $spacer * 0.5 $spacer * 1.5;
+    border-radius: $border-radius * 0.5;
+    font-family: $font-family-stack;
   }
 }

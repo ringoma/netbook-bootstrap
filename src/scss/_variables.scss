@@ -20,12 +20,16 @@ $primary: hsl(214, 91%, 50%);
 $primary-darken: hsl(214, 91%, 40%);
 $secondary: rgba(101, 100, 100, 1);
 $background-color: rgb(255, 255, 255);
+$background-color-gradient:linear-gradient(311.76deg, #d4e7fe -15.24%, #ffffff 78.85%);
+
 // 2.2 Links & Typography Colors
 $link-primary-color: rgb(88, 88, 116);
 $link-secondary-color: rgba(47, 44, 74, 1);
 $headings-color: rgba(10, 9, 61, 1);
+
 // 2.3 Buttons Colors
 $btn-color: rgb(255, 255, 255);
+
 // 2.4 UI Colors
 $border-color: rgb(229, 229, 229);
 $input-border-color: $border-color;
@@ -33,6 +37,8 @@ $card-border-color: rgb(240, 240, 240);
 $placeholder-primary-color: rgb(110, 110, 145);
 $icon-primary-color: rgb(168, 168, 189);
 $footer-background-color: rgba(43, 43, 57, 1);
+
+
 
 // 3. Typography
 $base-font-size: 16px;
@@ -49,6 +55,8 @@ $lead-font-size: 1.125rem;
 $lead-font-weight: 400;
 $placeholder-font-size: 0.8rem;
 
+
+
 // 4. Buttons
 $btn-font-weight: 500;
 $btn-font-size: 0.8rem;
@@ -57,9 +65,16 @@ $btn-padding-y: 1.1rem;
 $btn-padding-x: 2.5rem;
 $btn-box-shadow: 0px 7px 22px 0 rgba(33, 123, 244, 0.34);
 $btn-border-radius: $border-radius;
+// 4.1 Button Sizes
+$btn-navbar-toggler-size: 3rem;
+$btn-navbar-toggler-icon-size: 1.5rem;
+
+
 
 // 5. Form Elements
 $input-filled-border: 1px solid $input-border-color;
+
+
 
 // 6. Layout and Grid System
 $container-width: 1200px;
@@ -68,6 +83,10 @@ $grid-gutter-width: 1.5rem;
 $section-padding: 5rem;
 $section-margin: 5rem;
 $gap: 1rem;
+// 6.1 Mobile Offcanvas
+$offcanvas-horizontal-width:300px;
+
+
 
 // 7. Components
 // 7.1 Header
@@ -85,9 +104,13 @@ $card-spacer-y: $spacer * 3;
 $card-spacer-x: $spacer * 3;
 $card-border-radius: $border-radius;
 
+
+
 // Shadows
 $box-shadow: 0 1rem 3rem rgba(36, 98, 160, 0.14);
 $box-shadow-lg: 0 1rem 3rem rgba(146, 165, 184, 0.14);
+
+
 
 // Focus Styles
 $focus-outline: 0;

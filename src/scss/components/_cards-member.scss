@@ -5,7 +5,7 @@
   padding: 1.5rem;
   border-radius: $border-radius;
   background-color: $background-color;
-  transition: all 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out,transform .5s cubic-bezier(.65,.06,.53,1.02);
   opacity: 0.4;
 
   &.active {
