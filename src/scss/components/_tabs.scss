@@ -10,10 +10,9 @@
     color: $link-secondary-color;
 
     transition:all 0.15s ease-in-out;
-    // border-radius: $border-radius;
-    // transition: background-color 0.3s;
+
     &.active {
-      color: $white;
+      color: $btn-color;
       box-shadow: $box-shadow;
     }
     &:not(.active):hover {

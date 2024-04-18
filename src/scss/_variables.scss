@@ -1,123 +1,90 @@
 // Index
-// Base Colors
-// Base Width
-// Buttons
-// Typography
-// Form typography
-// Component: Header
-// Component: Footer
-// Base
+// 1. Base Variables
+// 2. Colors
+// 3. Typography
+// 4. Buttons
+// 5. Form Elements
+// 6. Layout and Grid System
+// 7. Components
+//    7.1 Header
+//    7.2 Footer
+//    7.3 Cards
+
+// 1. Base Variables
 $spacer: 1rem;
-$base-font-size: 16px;
-$font-size-body: $base-font-size;
-$nav-link-font-size: 0.95rem;
+$border-radius: 0.95rem;
 
-
-// Base Colors
-$background-color: rgb(255, 255, 255);
+// 2. Colors
+// 2.1 Base Colors
 $primary: hsl(214, 91%, 50%);
 $primary-darken: hsl(214, 91%, 40%);
 $secondary: rgba(101, 100, 100, 1);
-$secondary-color: $secondary;
-
-$primary-btn-color:rgb(255, 255, 255);
-$btn-color:rgb(255, 255, 255);
-$btn-hover-color: rgb(255, 255, 255);
-
-$placeholder-primary-color: rgb(110, 110, 145);
+$background-color: rgb(255, 255, 255);
+// 2.2 Links & Typography Colors
 $link-primary-color: rgb(88, 88, 116);
 $link-secondary-color: rgba(47, 44, 74, 1);
-$icon-primary-color: rgb(168, 168, 189);
-
+$headings-color: rgba(10, 9, 61, 1);
+// 2.3 Buttons Colors
+$btn-color: rgb(255, 255, 255);
+// 2.4 UI Colors
 $border-color: rgb(229, 229, 229);
 $input-border-color: $border-color;
-
 $card-border-color: rgb(240, 240, 240);
-$input-filled-border: 1px solid $input-border-color;
+$placeholder-primary-color: rgb(110, 110, 145);
+$icon-primary-color: rgb(168, 168, 189);
+$footer-background-color: rgba(43, 43, 57, 1);
 
-$border-radius: 0.95rem;
-
-// Typography
+// 3. Typography
+$base-font-size: 16px;
+$font-size-body: $base-font-size;
+$nav-link-font-size: 0.95rem;
 $text-line-height: 1.8;
 $font-family-stack: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$display-font-sizes: (
+  1: 3.5rem,
+  2: 2.5rem
+);
+$display-font-weight: 700;
+$lead-font-size: 1.125rem;
+$lead-font-weight: 400;
+$placeholder-font-size: 0.8rem;
 
-// Base Width
-$container-width: 1200px;
-$container-padding: 2rem;
-
-// Grid
-$grid-gutter-width: 1.5rem;
-
-// Buttons
-
+// 4. Buttons
 $btn-font-weight: 500;
 $btn-font-size: 0.8rem;
 $btn-font-family: $font-family-stack;
 $btn-padding-y: 1.1rem;
 $btn-padding-x: 2.5rem;
-
 $btn-box-shadow: 0px 7px 22px 0 rgba(33, 123, 244, 0.34);
-$btn-border-radius: 0.95rem;
+$btn-border-radius: $border-radius;
 
-$headings-color: rgba(10, 9, 61, 1);
+// 5. Form Elements
+$input-filled-border: 1px solid $input-border-color;
 
-$display-font-sizes: (
-  1: 3.5rem,
-  2: 2.5rem,
-  3: 2rem,
-  4: 1rem,
-  5: 1rem,
-  6: 2.5rem,
-);
-
-$display-font-weight: 700;
-$lead-font-size: 1.125rem;
-$lead-font-weight: 400;
-
-// Form typography
-$placeholder-font-size: 0.8rem;
-
-$padding: 2rem;
-
-$gap: 1rem;
-
-// Section
+// 6. Layout and Grid System
+$container-width: 1200px;
+$container-padding: 2rem;
+$grid-gutter-width: 1.5rem;
 $section-padding: 5rem;
 $section-margin: 5rem;
+$gap: 1rem;
 
-// Component: Header
+// 7. Components
+// 7.1 Header
 $header-blur: 12px;
 $header-height: 90px;
+$header-height-md: 60px;
 $header-background-color: $background-color;
 
-// Component: Footer
+// 7.2 Footer
 $footer-height: 172px;
-$footer-background-color: rgba(43, 43, 57, 1);
-
 $social-padding-gap: 0.25rem;
 
-// Component: Cards
+// 7.3 Cards
 $card-spacer-y: $spacer * 3;
 $card-spacer-x: $spacer * 3;
+$card-border-radius: $border-radius;
 
-// Shadow
+// Shadows
 $box-shadow: 0 1rem 3rem rgba(36, 98, 160, 0.14);
 $box-shadow-lg: 0 1rem 3rem rgba(146, 165, 184, 0.14);
-
-// $card-spacer-y:                     $spacer * 10;
-// $card-spacer-x:                     $spacer;
-// $card-title-spacer-y:               $spacer * .5;
-// $card-title-color:                  null;
-// $card-subtitle-color:               null;
-// $card-border-width:                 var(--#{$prefix}border-width);
-$card-border-color: $card-border-color;
-$card-border-radius: $border-radius;
-// $card-box-shadow:                   null;
-// $card-inner-border-radius:          subtract($card-border-radius, $card-border-width);
-// $card-cap-padding-y:                $card-spacer-y * .5;
-// $card-cap-padding-x:                $card-spacer-x;
-// $card-cap-bg:                       rgba(var(--#{$prefix}body-color-rgb), .03);
-// $card-cap-color:                    null;
-// $card-height:                       null;
-// $card-color:                        null;
-// $card-bg:                           var(--#{$prefix}body-bg);
