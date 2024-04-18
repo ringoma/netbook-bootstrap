@@ -8,6 +8,7 @@
 
 // Layout
 @import 'components/header';
+@import 'components/header-mobile';
 @import 'components/footer';
 
 // Sections
@@ -19,9 +20,11 @@
 @import 'components/badge';
 @import 'components/list';
 @import 'components/navbar';
+@import 'components/navbar-mobile';
 @import 'components/cards';
-@import 'components/cards--member';
+@import 'components/cards-member';
 @import 'components/tabs';
+@import 'components/tabs-mobile';
 @import 'components/buttons';
 @import 'components/forms';
 

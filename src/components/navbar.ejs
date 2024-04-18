@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg w-100">
+  <div class="container navbar__container px-4 px-md-2">
+    <div class="navbar__left">
+      <a class="navbar__brand" href="#">
+        <img src="assets/images/logo.svg" alt="Netbook" class="logo" />
+      </a>
+      <div class="collapse navbar-collapse ms-5" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Community
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li>
+                <a class="dropdown-item" href="#">Friends & Family</a>
+              </li>
+              <li><a class="dropdown-item" href="#">Countries</a></li>
+              <li>
+                <a class="dropdown-item" href="#">Planets</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Events</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar__right d-none d-lg-flex">
+      <div class="input-group input-group-filled">
+        <span class="input-group-text" id="search-input">
+          <i class="bi-search"></i>
+        </span>
+        <input
+          type="text"
+          class="form-control text-filled"
+          placeholder="Search Here..."
+          aria-label="SearchHere"
+          aria-describedby="search-input"
+        />
+      </div>
+      <button class="btn btn-primary shadow">Log in</button>
+    </div>
+  </div>
+</nav>
+<!-- <%= require("./navbar-offcanvas.ejs")() %> -->

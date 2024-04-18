@@ -1,0 +1,9 @@
+@include media-breakpoint-down(md){
+  header {
+    height:$header-height-md;
+
+    .logo{
+      max-width: 120px;
+    }
+  }
+}

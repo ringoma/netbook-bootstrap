@@ -25,13 +25,3 @@ header {
 
   transition: all 0.3s ease-in-out;
 }
-
-@include media-breakpoint-down(md){
-  header {
-    height:$header-height-md;
-
-    .logo{
-      max-width: 120px;
-    }
-  }
-}
