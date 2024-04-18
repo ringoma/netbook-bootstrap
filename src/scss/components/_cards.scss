@@ -6,63 +6,76 @@
     }
   }
 }
-.card:not(.card-blend) {
-  transition: all 0.3s ease-out;
 
-  a.btn-link {
-    color: $link-secondary-color;
-    transition: color 0.3s ease-out;
-  }
-  .card-icon-heading svg {
-    transition: fill 0.3s ease-out;
+.card {
+  // .card-plain is for cards with a transparent background.
+  &.card-plain {
+    background: transparent;
   }
 
-  &.active,
-  &:hover {
-    box-shadow: $box-shadow-lg;
+  // Cards not using the .card-plain class have a transition effect on hover, changing the color of links and icons.
+  &:not(.card-plain) {
+    transition: all 0.3s ease-out;
 
     a.btn-link {
-      color: $primary;
+      color: $link-secondary-color;
+      transition: color 0.3s ease-out;
     }
-  }
-  &:hover {
-    .card-icon-heading {
-      svg {
-        fill: $primary;
+    .card-icon-heading svg {
+      transition: fill 0.3s ease-out;
+    }
+
+    // .active class and hover state apply a larger box shadow and change the link color to the primary color.
+    &.active,
+    &:hover {
+      box-shadow: $box-shadow-lg;
+
+      a.btn-link {
+        color: $primary;
+      }
+    }
+
+    &:hover {
+      .card-icon-heading {
+        svg {
+          fill: $primary;
+        }
       }
     }
   }
-}
-.card-icon-heading {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-.card-title {
-  margin-bottom: 0;
-}
 
-.card-text {
-  line-height: $text-line-height;
-  margin: $spacer * 2 0;
-}
+  .card-icon-heading {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 
-.card-figure {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  margin: 1rem 0;
+  .card-title {
+    margin-bottom: 0;
+  }
 
-  .figure__avatars {
-    img {
-      width: 2rem;
-      height: 2rem;
-    }
-    &.stack {
-      img:not(:first-child) {
-        margin-left: -0.75rem;
-        border-radius: 100%;
-        box-shadow: $box-shadow;
+  .card-text {
+    line-height: $text-line-height;
+    margin: $spacer * 2 0;
+  }
+
+  .card-figure {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+
+    .figure__avatars {
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+      &.stack {
+        img:not(:first-child) {
+          margin-left: -0.75rem;
+          border-radius: 100%;
+          box-shadow: $box-shadow;
+        }
       }
     }
   }

@@ -3,27 +3,30 @@ body {
   font-size: $font-size-body;
 }
 
+// Layout
+.logo {
+  width: 100%;
+  max-width: 144px;
+  height: auto;
+  transition: all 0.3s ease-in-out;
+}
+
 section{
   padding-top: $section-padding;
   padding-bottom: $section-padding;
 }
 
-.logo{
-  width:100%;
-  max-width: 144px;
-  height:auto;
-}
-
-.pointer-events-none{
-  pointer-events: none;
-}
-
-.sub-heading{
-  font-size:1.125rem;
-}
-
 .section-text{
   line-height: $text-line-height;
+}
+
+.text-max-width{
+  max-width: 32.5rem;
+}
+
+// Typography
+.sub-heading{
+  font-size:1.125rem;
 }
 
 .lead{
@@ -31,10 +34,7 @@ section{
   line-height: 1.8;
 }
 
-.text-max-width{
-  max-width: 32.5rem;
-}
-
-.link-dark{
-  color: $link-secondary-color;
+// Utlity Classes
+.pointer-events-none{
+  pointer-events: none;
 }

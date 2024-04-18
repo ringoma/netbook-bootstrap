@@ -2,7 +2,7 @@ header {
   width: 100%;
   height: $header-height;
 
-  background-color: rgba($background-color,0.5);
+  background-color: rgba($background-color, 0.5);
   border-bottom: 1px solid rgba($primary, 0.1);
   backdrop-filter: blur($header-blur);
 
@@ -13,15 +13,7 @@ header {
   display: flex;
   align-items: center;
 
-  .navbar{
-    padding:$spacer*1.5 0;
+  .navbar {
+    padding: $spacer * 1.5 0;
   }
-}
-
-.logo{
-  width:100%;
-  max-width: 144px;
-  height:auto;
-
-  transition: all 0.3s ease-in-out;
 }

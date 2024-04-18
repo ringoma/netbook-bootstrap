@@ -1,54 +1,61 @@
-.navbar__container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navbar__left {
-  display: flex;
-  flex-direction: row;
-}
-
-.navbar__right {
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  gap: $spacer * 4;
-}
-
-ul.navbar-nav {
-  display: flex;
-  flex-direction: row;
-  gap: $spacer * 2;
-}
-
-.navbar-nav .nav-link {
-  font-size: $nav-link-font-size;
-  font-weight: 400;
-  color: $link-primary-color;
-  transition: color 0.3s;
-
-  &:hover:not(.active){
-    color: $primary;
+.navbar {
+  // Base
+  .padding-top-spacer {
+    padding-top: $header-height;
   }
-}
 
-.navbar-nav .nav-link.active {
-  font-weight: 600;
-}
+  .btn {
+    padding-top: $spacer * 0.9;
+    padding-bottom: $spacer * 0.9;
+  }
 
-.padding-top-spacer{
-  padding-top:$header-height;
-}
+  .navbar__brand{
+    &:focus-visible {
+      @include focus-visible-shadow;
+    }
+  }
 
-.dropdown-toggle::after {
-  content: url("data:image/svg+xml,<svg width='7' height='5' viewBox='0 0 7 5' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M6.3125 1.375L3.5 4.1875L0.6875 1.375' stroke='#{$link-primary-color}' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/></svg>");
-  border:none;
-  position:relative;
-  top:-3px;
-  vertical-align: bottom;
-}
+  // Layout
+  .navbar__container {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.navbar .btn{
-  padding-top:$spacer * 0.9;
-  padding-bottom:$spacer * 0.9;
+  .navbar__left {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .navbar__right {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: $spacer * 4;
+  }
+
+  // Nav Menu List
+  ul.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: $spacer * 2;
+
+    .nav-link {
+      font-size: $nav-link-font-size;
+      font-weight: 400;
+      color: $link-primary-color;
+      transition: color 0.3s;
+
+      &:hover:not(.active) {
+        color: $primary;
+      }
+
+      &.active {
+        font-weight: 600;
+      }
+
+      &:focus-visible {
+        @include focus-visible-shadow;
+      }
+    }
+  }
 }

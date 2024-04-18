@@ -78,7 +78,7 @@ $header-background-color: $background-color;
 
 // 7.2 Footer
 $footer-height: 172px;
-$social-padding-gap: 0.25rem;
+$social-padding-gap: 0.35rem;
 
 // 7.3 Cards
 $card-spacer-y: $spacer * 3;
@@ -88,3 +88,7 @@ $card-border-radius: $border-radius;
 // Shadows
 $box-shadow: 0 1rem 3rem rgba(36, 98, 160, 0.14);
 $box-shadow-lg: 0 1rem 3rem rgba(146, 165, 184, 0.14);
+
+// Focus Styles
+$focus-outline: 0;
+$focus-box-shadow-blur: 0.25rem;

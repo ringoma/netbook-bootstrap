@@ -1,7 +1,4 @@
-@mixin border-primary-opacity($opacity: 1) {
-  border-color: rgba($primary, $opacity);
-}
-
+// Typography Mixins
 @mixin font-inter($weight: 400) {
   font-family: $font-family-stack;
   font-optical-sizing: auto;
@@ -10,17 +7,28 @@
   font-variation-settings: "slnt" 0;
 }
 
+// Border Mixins
+@mixin border-primary-opacity($opacity: 1) {
+  border-color: rgba($primary, $opacity);
+}
+
+@mixin focus-visible-shadow($opacity: 0.5) {
+  outline: $focus-outline;
+  box-shadow: 0 0 0 $focus-box-shadow-blur rgba($primary, $opacity);
+}
+
+// Layout Mixins
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Input Form Mixins
 @mixin input-style-filled() {
   background-color: transparent;
   border: none;
   border-radius: 0;
   border-bottom: $input-filled-border;
   color: $link-primary-color;
-}
-
-
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
