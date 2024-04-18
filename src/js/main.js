@@ -1,11 +1,22 @@
 import "../scss/styles.scss";
 
+// Animation
+import { IntroAnimation } from "./animations/intro-animation";
+import { AboutAnimation } from "./animations/about-animation";
+import { AchievementAnimation } from "./animations/achievement-animation";
+import { MemberAnimation } from "./animations/member-animation";
 
-let btn = document.querySelector('.mouse-cursor-gradient-tracking');
-btn.addEventListener('mousemove', e => {
-  let rect = e.target.getBoundingClientRect();
-  let x = e.clientX - rect.left;
-  let y = e.clientY - rect.top;
-  btn.style.setProperty('--x', x + 'px');
-  btn.style.setProperty('--y', y + 'px');
-});
+// Components
+import { initTabMenu, handleCardSelectedState } from "./components/tab-menu";
+
+// Animations with scrollTrigger
+IntroAnimation();
+AboutAnimation();
+AchievementAnimation();
+MemberAnimation();
+
+// Components
+initTabMenu();
+
+// Set member card state as active
+handleCardSelectedState("active");

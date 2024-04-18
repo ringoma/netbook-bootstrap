@@ -1,25 +1,24 @@
 .tab-container.nav {
   display: inline-flex;
   padding: $spacer * 0.5;
-  background-color: rgba($primary-color, 0.06);
+  background-color: rgba($primary, 0.06);
   border-radius: $border-radius;
   margin: $spacer * 2 0;
 
   .nav-link {
     padding: $spacer $spacer * 3;
     color: $link-secondary-color;
+
+    transition:all 0.15s ease-in-out;
     // border-radius: $border-radius;
     // transition: background-color 0.3s;
     &.active {
+      color: $white;
       box-shadow: $box-shadow;
     }
-    
-    &.active,
-    &:hover {
-      color: $white;
-    }
-    &:hover {
-      background-color: rgba($primary-color, 0.3);
+    &:not(.active):hover {
+      color: $primary;
+      background-color: rgba($primary, 0.1);
     }
   }
 }

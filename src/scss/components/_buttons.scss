@@ -4,11 +4,40 @@
 
 .btn.btn-link {
   font-size: $base-font-size;
+  border-radius: 0;
+  &:focus {
+    box-shadow: none;
+  }
+  &:focus-visible {
+    border-bottom: 1px solid $primary;
+  }
 }
 
-.btn-with-icon {
+.btn.btn-with-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  i {
+    transition: transform 0.3s cubic-bezier(0.64, -0.01, 0.29, 1.02);
+  }
+  &:hover,
+  &:focus {
+    i {
+      transform: translateX(0.5rem);
+    }
+  }
+}
+
+.btn.btn-outline-primary {
+  border-color: rgba($primary, 0.6);
+  &:hover {
+    color: $primary;
+    border-color: rgba($primary, 0.3);
+    background-color: rgba($primary, 0.1);
+  }
+  &:active {
+    color: $primary-darken;
+    background-color: rgba($primary, 0.2);
+  }
 }

@@ -6,16 +6,24 @@
 // Form typography
 // Component: Header
 // Component: Footer
-
 // Base
 $spacer: 1rem;
 $base-font-size: 16px;
+$font-size-body: $base-font-size;
+$nav-link-font-size: 0.95rem;
+
 
 // Base Colors
 $background-color: rgb(255, 255, 255);
-$primary-color: rgb(31, 123, 244);
-$secondary-color: rgba(101, 100, 100, 1);
-$btn-primary-color: $primary-color;
+$primary: hsl(214, 91%, 50%);
+$primary-darken: hsl(214, 91%, 40%);
+$secondary: rgba(101, 100, 100, 1);
+$secondary-color: $secondary;
+
+$primary-btn-color:rgb(255, 255, 255);
+$btn-color:rgb(255, 255, 255);
+$btn-hover-color: rgb(255, 255, 255);
+
 $placeholder-primary-color: rgb(110, 110, 145);
 $link-primary-color: rgb(88, 88, 116);
 $link-secondary-color: rgba(47, 44, 74, 1);
@@ -41,28 +49,15 @@ $container-padding: 2rem;
 $grid-gutter-width: 1.5rem;
 
 // Buttons
-$btn-color: $primary-color;
+
 $btn-font-weight: 500;
 $btn-font-size: 0.8rem;
 $btn-font-family: $font-family-stack;
 $btn-padding-y: 1.1rem;
 $btn-padding-x: 2.5rem;
+
 $btn-box-shadow: 0px 7px 22px 0 rgba(33, 123, 244, 0.34);
 $btn-border-radius: 0.95rem;
-
-// $font-size-heading: 24px;
-// $font-weight-heading: 700;
-
-// $font-size-subtitle: 20px;
-$font-size-body: $base-font-size;
-// $font-weight-normal: 400;
-
-// $font-size-menu: 14px;
-// $font-weight-menu: 400;
-// $font-weight-menu-current: 600;
-
-// $font-size-description: 14px;
-// $font-size-small: 12px;
 
 $headings-color: rgba(10, 9, 61, 1);
 

@@ -7,7 +7,7 @@
     }
   }
 
-  input[type="text"] {
+  input.text-filled {
     @include input-style-filled();
     width:7.5rem;
     padding-left:0.3rem;

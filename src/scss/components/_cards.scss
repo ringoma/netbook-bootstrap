@@ -13,21 +13,33 @@
     color: $link-secondary-color;
     transition: color 0.3s ease-out;
   }
+  .card-icon-heading svg {
+    transition: fill 0.3s ease-out;
+  }
 
   &.active,
   &:hover {
     box-shadow: $box-shadow-lg;
 
     a.btn-link {
-      color: $primary-color;
+      color: $primary;
+    }
+  }
+  &:hover {
+    .card-icon-heading {
+      svg {
+        fill: $primary;
+      }
     }
   }
 }
-
-.card-title {
+.card-icon-heading {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.card-title {
+  margin-bottom: 0;
 }
 
 .card-text {

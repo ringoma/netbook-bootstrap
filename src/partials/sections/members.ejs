@@ -1,26 +1,19 @@
 <section id="members">
-  <div class="container text-center">
+  <div class="container text-center px-4 px-md-2">
     <article>
-      <h4 class="sub-heading text-primary">Valuable Team</h4>
+      <h3 class="sub-heading text-primary">Valuable Team</h4>
       <h2 class="display-2">Our Active Members</h2>
       <p class="section-text text-secondary text-max-width mx-auto mt-3">
         when an unknown printer took a galley of type and meeting fari scrambled
         it.
       </p>
     </article>
-    <ul class="tab-container nav nav-pills d-inline-flex gap-2">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Newest</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Popular</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Active</a>
-      </li>
-    </ul>
-    <div class="card-member-container">
-      <div class="row gx-3 gx-md-4 gy-3 gy-md-4">
+
+    <!-- Tab Menu with 3 buttons -->
+    <%= require("../../components/tab-menu.ejs")() %>
+
+    <div id="members-cards" class="card-member-container">
+      <div class="row gx-3 gx-md-4 gy-3 gy-md-4 justify-content-center">
         <div class="col-6 col-lg-auto">
           <div class="card card-member active" data-tag="active">
             <div class="card-body">

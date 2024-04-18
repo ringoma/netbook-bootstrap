@@ -10,14 +10,17 @@
   border-radius: $border-radius;
   background-color: $background-color;
   transition: all 0.3s ease-in-out;
+  opacity: 0.4;
 
   &.active {
+    opacity: 1;
     box-shadow: $box-shadow-lg;
-  }
-
-  &:hover {
     transform: translateY(-0.75rem);
   }
+
+  // &:hover {
+  //   transform: translateY(-0.75rem);
+  // }
 
   .card-member__info {
     display: flex;
@@ -35,7 +38,7 @@
     .card-member__social {
       font-size: 0.9rem;
       font-weight: 400;
-      color: $secondary-color;
+      color: $secondary;
     }
   }
 }

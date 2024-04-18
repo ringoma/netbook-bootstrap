@@ -1,6 +1,8 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-// const HtmlWebpackInlineSVGPlugin = require("html-webpack-inline-svg-plugin");
+"use strict";
+
 const path = require("path");
+const autoprefixer = require("autoprefixer");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/js/main.js",
@@ -38,7 +40,7 @@ module.exports = {
             loader: "postcss-loader",
             options: {
               postcssOptions: {
-                plugins: () => [require("autoprefixer")],
+                plugins: [autoprefixer],
               },
             },
           },
@@ -54,6 +56,5 @@ module.exports = {
       template: "./src/index.ejs",
       filename: "./index.html",
     }),
-    // new HtmlWebpackInlineSVGPlugin(),
   ],
 };

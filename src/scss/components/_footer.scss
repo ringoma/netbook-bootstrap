@@ -11,8 +11,12 @@ footer {
   flex-grow: 1;
   text-decoration: none;
 
-  a {
+  a.nav-link {
     color: $white;
+    transition:opacity .3s ease-out;
+    &:hover{
+      opacity:.6;
+    }
   }
 
   &--social {
