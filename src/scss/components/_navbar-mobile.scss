@@ -1,0 +1,10 @@
+@include media-breakpoint-between(lg, xl) {
+  ul.navbar-nav{
+    gap:$spacer;
+  }
+  .navbar {
+    .navbar__right {
+      gap: $spacer;
+    }
+  }
+}
