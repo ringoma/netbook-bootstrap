@@ -12,6 +12,26 @@
   }
 
   .padding-top-spacer {
-    padding-top: $header-height-md * 0.5;
+    padding-top: $header-height-md *.75 !important;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  section{  
+    padding-top: $section-padding * .5;
+    padding-bottom: $section-padding * .5;
+  }
+  .display-1 {
+    font-size: 2rem;
+  }
+  .display-2{
+    font-size: 1.6rem;
+  }
+  .padding-top-spacer {
+    padding-top: $header-height-md * 0.15;
+  }
+  .lead {
+    font-size: $base-font-size;
+    line-height: 1.5;
   }
 }

@@ -1,0 +1,5 @@
+@include media-breakpoint-down(sm) {
+  .intro-cta-container .btn {
+    flex: 1 1 calc(50% - $spacer)
+  }
+}

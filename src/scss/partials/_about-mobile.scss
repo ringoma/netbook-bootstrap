@@ -1,0 +1,7 @@
+@include media-breakpoint-down(md) {
+  #about {
+    .image-group-container {
+      gap: $spacer;
+    }
+  }
+}

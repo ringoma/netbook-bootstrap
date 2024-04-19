@@ -1,7 +1,10 @@
 @include media-breakpoint-down(sm) {
   .card {
     .card-body {
-      padding:$spacer*2.5 $spacer*1.25;
+      padding:$spacer*1.5 $spacer*1.25;
+    }
+    .card-text {
+      margin: $spacer 0;
     }
   }
 }
