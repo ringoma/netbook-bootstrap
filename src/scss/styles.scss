@@ -11,6 +11,7 @@
 @import 'components/header';
 @import 'components/header-mobile';
 @import 'components/footer';
+@import 'components/footer-mobile';
 
 // Partials
 @import 'partials/intro';
@@ -23,8 +24,9 @@
 @import 'components/navbar__dropdownmenu';
 @import 'components/navbar-offcanvas';
 @import 'components/cards';
+@import 'components/cards-mobile';
 @import 'components/cards-member';
-@import 'components/cards-member-mobile';
+// @import 'components/cards-member-mobile';
 @import 'components/tabs';
 @import 'components/tabs-mobile';
 @import 'components/buttons';
