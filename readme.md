@@ -2,7 +2,7 @@
 
 ## Objective
 Build a single page website with any template engines or UI framework.
-
+---
 
 ## Features
 ### General
@@ -18,9 +18,9 @@ Build a single page website with any template engines or UI framework.
 - Enhances accessibility with settings for `:focus` and `:focus-visible` pseudo-classes.
 - Ensures browser compatibility with Chrome, Firefox, and Safari.
 - Adjusts the color of elements in layout for compliance with WCAG 2.0 AA level.
+---
 
-
-### Installing
+## Installing
 
 Follow these steps to set up a development environment:
 
@@ -28,8 +28,8 @@ Follow these steps to set up a development environment:
 2. Install dependencies: `npm install`
 3. Start the server: `npm run dev`
 
+--
 
 ## Development Environment
-
 - Node.js - v18.18.0
 - npm - 9.8.1
