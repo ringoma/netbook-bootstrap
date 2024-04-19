@@ -2,12 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="robots" content="noindex">
+
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Netbook | Your Solutions For Community</title>
     <meta
       name="description"
       content="Netbook is a community platform that connects people with their friends, family, and other communities."
     />
+    <meta property="og:title" content="Netbook | Your Solutions For Community" />
+    <meta property="og:url" content="https://netbook-assesment.web.app" />
+    <meta
+      property="og:image"
+      content="//netbook-assesment.web.app/netbook-share.png"
+    />
+    <meta property="og:description" content="Netbook is a community platform that connects people with their friends, family, and other communities." />
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,13 +25,40 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <style>
+      /* Hide content by default before DOM is loaded */
+      body {
+        visibility: hidden;
+      } 
+    </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.body.style.visibility = "visible";
+      });
+    </script>
   </head>
   <body>
-    <!-- <div class="padding-top-spacer px-2"> -->
-      <a class="visually-hidden-focusable position-fixed" href="#intro"
-        >Skip to main content</a
-      >
-    <!-- </div> -->
+    <noscript>
+      <style>
+        /* Make content visible if JavaScript is disabled */
+        body {
+          visibility: visible;
+        }
+      </style>
+    </noscript>
+
+    <a class="visually-hidden-focusable position-fixed" href="#intro"
+      >Skip to main content</a
+    >
 
     <!-- Header -->
     <%= require("./partials/layout/header.ejs")() %>

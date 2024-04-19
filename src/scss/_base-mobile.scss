@@ -1,5 +1,15 @@
-@include media-breakpoint-down(md){
-  .padding-top-spacer{
-    padding-top:$header-height-md * 0.5;
+@include media-breakpoint-up(md) {
+  .container-padding {
+    padding: $container-padding-y $container-padding-x * 2;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .container-padding {
+    padding: $container-padding-y $container-padding-x * 0.5;
+  }
+
+  .padding-top-spacer {
+    padding-top: $header-height-md * 0.5;
   }
 }

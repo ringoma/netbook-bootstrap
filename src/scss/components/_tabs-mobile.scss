@@ -1,3 +1,11 @@
+@include media-breakpoint-down(xs) {
+  .tab-container.nav {
+    .nav-link {
+      padding: $spacer * .5 $spacer;
+    }
+  }
+}
+
 @include media-breakpoint-down(sm) {
   .tab-container.nav {
     .nav-link {
