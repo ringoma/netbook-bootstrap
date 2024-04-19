@@ -6,17 +6,7 @@
     <title>Netbook | Your Solutions For Community</title>
     <meta
       name="description"
-      content="Netbook is a community platform that connects people with their friends, family, and other communities." />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      content="Netbook is a community platform that connects people with their friends, family, and other communities."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,7 +17,11 @@
     />
   </head>
   <body>
-    <a class="visually-hidden-focusable" href="#intro">Skip to main content</a>
+    <!-- <div class="padding-top-spacer px-2"> -->
+      <a class="visually-hidden-focusable position-fixed" href="#intro"
+        >Skip to main content</a
+      >
+    <!-- </div> -->
 
     <!-- Header -->
     <%= require("./partials/layout/header.ejs")() %>
@@ -42,17 +36,15 @@
 
       <!-- About -->
       <%= require("./partials/sections/about.ejs")() %>
-      
+
       <!-- Achievement -->
       <%= require("./partials/sections/achievement.ejs")() %>
 
       <!-- Team -->
       <%= require("./partials/sections/members.ejs")() %>
-      
     </main>
 
     <!-- Footer -->
     <%= require("./partials/layout/footer.ejs")() %>
-    
   </body>
 </html>

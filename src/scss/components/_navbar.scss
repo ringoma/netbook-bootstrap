@@ -44,13 +44,20 @@ ul.navbar-nav {
 
     &:hover:not(.active) {
       color: $primary;
+
+      &:active{
+        color: $primary-lighten;
+        // background-color: rgba($primary, 0.1);
+      }
     }
 
     &.active {
       font-weight: 600;
     }
 
+
     &:focus-visible {
+      color: $primary;
       @include focus-visible-shadow;
     }
   }

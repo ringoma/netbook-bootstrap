@@ -22,12 +22,14 @@
     "sass-loader": "^14.2.0",
     "style-loader": "^4.0.0",
     "webpack": "^5.91.0",
+    "webpack-bundle-analyzer": "^4.10.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "gsap": "^3.12.5"
   }
 }

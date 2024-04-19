@@ -3,8 +3,11 @@
 const path = require("path");
 const autoprefixer = require("autoprefixer");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const BundleAnalyzerPlugin =
+  require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
+  mode: 'development',
   entry: "./src/js/main.js",
   output: {
     filename: "main.js",
@@ -14,10 +17,14 @@ module.exports = {
     static: path.resolve(__dirname, "dist"),
     port: 8000,
     hot: true,
-    // devMiddleware: {
-    //   writeToDisk: true,
-    // },
   },
+  plugins: [
+    // new BundleAnalyzerPlugin(),
+    new HtmlWebpackPlugin({
+      template: "./src/index.ejs",
+      filename: "./index.html",
+    }),
+  ],
   module: {
     rules: [
       {
@@ -51,10 +58,4 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/index.ejs",
-      filename: "./index.html",
-    }),
-  ],
 };

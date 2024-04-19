@@ -35,6 +35,13 @@
     font-size: $base-font-size;
     border-radius: 0;
 
+    color: $link-secondary-color;
+    transition: color 0.3s ease-out;
+
+    &:active {
+      color: $primary-lighten !important;
+    }
+
     &:focus-visible {
       border-bottom: 1px solid $primary;
       box-shadow: none;

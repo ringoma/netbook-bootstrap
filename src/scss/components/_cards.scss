@@ -17,10 +17,6 @@
   &:not(.card-plain) {
     transition: all 0.3s ease-out;
 
-    a.btn-link {
-      color: $link-secondary-color;
-      transition: color 0.3s ease-out;
-    }
     .card-icon-heading svg {
       transition: fill 0.3s ease-out;
     }
@@ -30,7 +26,7 @@
     &:hover {
       box-shadow: $box-shadow-lg;
 
-      a.btn-link {
+      .btn-link {
         color: $primary;
       }
     }
