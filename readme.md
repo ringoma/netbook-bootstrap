@@ -28,7 +28,6 @@ Follow these steps to set up a development environment:
 2. Install dependencies: `npm install`
 3. Start the server: `npm run dev`
 
----
 
 ## Development Environment
 - Node.js - v18.18.0
