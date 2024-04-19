@@ -1,4 +1,4 @@
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(sm) {
   .card {
     .card-body {
       padding:$spacer*2.5 $spacer*1.25;

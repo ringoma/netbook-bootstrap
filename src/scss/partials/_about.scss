@@ -9,7 +9,7 @@
     grid-template:
       "left right-top" 1fr
       "left right-bottom" 1fr
-      / minmax(270px, 1fr) minmax(270px, 1fr);
+      / 270px 270px;
 
     .left {
       grid-area: left;
@@ -27,6 +27,7 @@
       width: 100%;
       max-width: 270px;
       height: auto;
+      border-radius: $border-radius;
     }
   }
 }
