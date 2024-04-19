@@ -1,5 +1,8 @@
 # Netbook Assessment
 
+## Result
+[Netbook Assessment](https://netbook-assesment.web.app/)
+
 ## Features
 ### General
 - Utilizes Bootstrap 5 with SCSS, Webpack, and EJS for efficient folder structure management.
