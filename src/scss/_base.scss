@@ -12,7 +12,8 @@ body,a {
 }
 
 .container-padding{
-  padding: $container-padding-x $container-padding-y;
+  padding-left: $container-padding-x;
+  padding-right: $container-padding-x;
 }
 
 section{

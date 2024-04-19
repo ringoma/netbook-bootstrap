@@ -1,0 +1,7 @@
+@include media-breakpoint-down(sm) {
+  .btn {
+    &.btn-primary,&.btn-outline-primary {
+      width:100%;
+    }
+  }
+}
