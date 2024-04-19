@@ -1,22 +1,22 @@
 # Netbook Assessment
 
-## Result
+## Live
 [Netbook Assessment](https://netbook-assesment.web.app/)
 
 ## Features
 ### General
-- Utilizes Bootstrap 5 with SCSS, Webpack, and EJS for efficient folder structure management.
-- Using scroll-trigger animations for an interactive user experience.
-- Optimizes images for 2x quality for retina displays and compression.
+- Utilizes Bootstrap 5 with SCSS, Webpack, and EJS for better folder structure management.
+- Using scroll-trigger animations on design elements.
+- Optimizes images in 2x quality for retina displays with compressed file size.
 ### Meta tag related
-- Uses a meta robots tag to prevent the site from appearing in search results.
 - Includes a favicon and Open Graph (og) meta tags with a share image. So it includes an image when sending the link via Whatsapp or sharing in Facebook.
+- Using meta robots tag to prevent the site from appearing in search results for internal assessment purpose.
 ### Hosting for result
-- Hosted on Firebase using Firebase CLI.
+- Hosted in Firebase Hosting using Firebase CLI.
 ### UI/UX, Compability & Accessibility
-- Enhances accessibility with settings for `:focus` and `:focus-visible` pseudo-classes.
+- Enhances UX and accessibility with CSS for `:active`, `:focus` and `:focus-visible` pseudo-classes.
 - Ensures browser compatibility with Chrome, Firefox, and Safari.
-- Adjusts the color of elements in layout for compliance with WCAG 2.0 AA level.
+- Adjusts the elements color for the compliance of WCAG.
 ---
 
 ## Installing
