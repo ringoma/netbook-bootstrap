@@ -16,7 +16,6 @@ const buttons = document.querySelectorAll("[href='#']");
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log("licked");
     return true;
   });
 });

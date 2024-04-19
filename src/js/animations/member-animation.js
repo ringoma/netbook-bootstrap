@@ -9,7 +9,7 @@ export const MemberAnimation = () => {
     scrollTrigger: {
       trigger: "#members",
       markers: false,
-      start: "top center",
+      start: "-=15% center",
     },
   });
 
