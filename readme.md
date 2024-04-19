@@ -7,7 +7,7 @@
 - Optimizes images for 2x quality for retina displays and compression.
 ### Meta tag related
 - Uses a meta robots tag to prevent the site from appearing in search results.
-- Includes a favicon and Open Graph (og) meta tags with a share image.
+- Includes a favicon and Open Graph (og) meta tags with a share image. So it includes an image when sending the link via Whatsapp or sharing in Facebook.
 ### Hosting for result
 - Hosted on Firebase using Firebase CLI.
 ### UI/UX, Compability & Accessibility
