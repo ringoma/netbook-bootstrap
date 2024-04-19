@@ -11,12 +11,12 @@
 ### Meta tag related
 - Includes a favicon and Open Graph (og) meta tags with a share image. So it includes an image when sending the link via Whatsapp or sharing in Facebook.
 - Using meta robots tag to prevent the site from appearing in search results for internal assessment purpose.
-### Hosting for result
-- Hosted in Firebase Hosting using Firebase CLI.
 ### UI/UX, Compability & Accessibility
 - Enhances UX and accessibility with CSS for `:active`, `:focus` and `:focus-visible` pseudo-classes.
 - Ensures browser compatibility with Chrome, Firefox, and Safari.
-- Adjusts the elements color for the compliance of WCAG.
+- Modifies the color of elements to ensure compliance with WCAG
+### Hosting for result
+- Hosted in Firebase Hosting using Firebase CLI.
 ---
 
 ## Installing
