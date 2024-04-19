@@ -4,25 +4,24 @@ footer {
   width: 100%;
   min-height: $footer-height;
   background: $footer-background-color;
-}
 
-.footer__nav {
-  @include flex-center;
-  flex-grow: 1;
-  text-decoration: none;
+  .footer__nav {
+    @include flex-center;
+    flex-grow: 1;
+    text-decoration: none;
 
-  .nav-link {
-    color: $btn-color;
-    transition: opacity 0.3s ease-out;
-    &:hover {
-      opacity: 0.6;
-    }
-    &:focus-visible {
-      box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
+    .nav-link {
+      color: $btn-color;
+      transition: opacity 0.3s ease-out;
+      &:hover {
+        opacity: 0.6;
+      }
+      &:focus-visible {
+        box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.5);
+      }
     }
   }
-
-  &--social {
+  .footer__nav--social {
     @include flex-center;
 
     .social-icon {

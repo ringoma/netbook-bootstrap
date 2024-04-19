@@ -1,15 +1,26 @@
-@include media-breakpoint-down(sm) {
-  .footer__nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@include media-breakpoint-between(md, lg) {
+  footer {
+    .footer-grid-layout {
+      display: grid !important;
+      grid-template:
+        "logo links" 1fr
+        "logo icons" 1fr
+        / 1fr 3fr;
+      gap: $spacer * 2;
+    }
+    .logo {
+      grid-area: logo;
+      align-self: flex-start;
+    }
+    .footer__nav {
+      grid-area: links;
+      align-self: flex-start;
+      justify-content: flex-end;
+    }
+    .footer__nav--social {
+      grid-area: icons;
+      align-self: flex-start;
+      justify-content: flex-end;
+    }
   }
 }
-
-// @include media-breakpoint-between(md,lg){
-//   .footer-grid-layout{
-//     display: grid;
-//     grid-template-columns: 1fr 1fr 1fr;
-//     gap: $spacer * 2;
-//   }
-// }
