@@ -1,9 +1,5 @@
 # Netbook Assessment
 
-## Objective
-Build a single page website with any template engines or UI framework.
----
-
 ## Features
 ### General
 - Utilizes Bootstrap 5 with SCSS, Webpack, and EJS for efficient folder structure management.
