@@ -1,4 +1,5 @@
-body,a {
+body,
+a {
   @include font-inter(400);
   font-size: $font-size-body;
 }
@@ -7,31 +8,30 @@ body,a {
 .logo {
   width: 144px;
   height: auto;
-  transition: all 0.3s ease-in-out;
 }
 
-.container-padding{
+.container-padding {
   padding-left: $container-padding-x;
   padding-right: $container-padding-x;
 }
 
-section{
+section {
   max-width: 100vw;
   overflow-x: hidden;
 
   padding-top: $section-padding;
   padding-bottom: $section-padding;
 
-  .section-text{
+  .section-text {
     line-height: $text-line-height;
   }
 }
 
-.article{
-  width:100%;
+.article {
+  width: 100%;
 }
 
-.text-max-width{
+.text-max-width {
   max-width: 32.5rem;
 }
 
@@ -39,22 +39,33 @@ section{
   padding-top: $header-height;
 }
 
-.visually-hidden-focusable{
-  padding:$spacer;
-  z-index:200;
+.visually-hidden-focusable {
+  padding: $spacer;
+  z-index: 200;
 }
 
 // Typography
-.sub-heading{
-  font-size:1.125rem;
+.sub-heading {
+  font-size: 1.125rem;
 }
 
-.lead{
-  color:$secondary;
+.lead {
+  color: $secondary;
   line-height: 1.8;
 }
 
 // Utlity Classes
-.pointer-events-none{
+.pointer-events-none {
   pointer-events: none;
+}
+
+// Icon
+.icon--primary {
+  color: $icon-primary-color;
+}
+.logo--dark {
+  color: $logo-color-dark;
+}
+.logo--light {
+  color: $logo-color-light;
 }
