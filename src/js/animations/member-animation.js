@@ -72,7 +72,7 @@ export const MemberAnimation = () => {
       duration: 0.8,
       stagger: 0.15,
       ease: "power2.out",
-      clearProps:true
+      clearProps: true,
     },
     0.7
   );

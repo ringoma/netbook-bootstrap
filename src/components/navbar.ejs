@@ -2,7 +2,7 @@
   <div class="container navbar__container container-padding">
     <div class="navbar__left">
       <a class="navbar__brand" href="#" role="button">
-        <img src="assets/images/logo.svg" alt="Netbook Logo" class="logo" />
+        <div class="logo logo--dark"><%= require("./logo.ejs")() %></div>
       </a>
       <div class="collapse navbar-collapse ms-5" id="navbarNavDropdown">
         <ul class="navbar-nav">
@@ -45,9 +45,9 @@
     </div>
     <div class="navbar__right d-none d-lg-flex">
       <%= require("./search-input-field.ejs")() %>
-      <button class="btn btn-primary shadow btn-with-icon">
+      <a href="#" class="btn btn-primary shadow btn-with-icon">
         <i class="bi bi-door-open-fill"></i> Log in
-      </button>
+      </a>
     </div>
     <button
       class="navbar-toggler rounded-circle"
@@ -57,7 +57,7 @@
       aria-controls="offcanvasNavbar"
       aria-label="Toggle navigation"
     >
-    <i class="bi bi-list"></i>
+      <i class="bi bi-list"></i>
     </button>
   </div>
 </nav>

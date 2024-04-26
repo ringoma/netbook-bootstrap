@@ -96,7 +96,7 @@ export const IntroAnimation = () => {
 
   // Animations: CTA Button
   tl.fromTo(
-    "#intro button",
+    "#intro a.btn",
     { opacity: 0, y: 20 },
     {
       opacity: 1,

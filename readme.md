@@ -15,7 +15,7 @@
 - Enhances UX and accessibility with CSS for `:active`, `:focus` and `:focus-visible` pseudo-classes.
 - Ensures browser compatibility with Chrome, Firefox, and Safari.
 - Modifies the color of elements to ensure compliance with WCAG
-### Hosting for result
+### Hosting
 - Hosted in Firebase Hosting using Firebase CLI.
 ---
 
