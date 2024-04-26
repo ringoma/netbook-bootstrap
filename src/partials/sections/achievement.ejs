@@ -5,21 +5,9 @@
         <div id="card-rating" class="card active">
           <article class="card-body">
             <div class="card-icon-heading">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="transparent"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14.4825 20.8614L19.9988 24.3563C20.704 24.8031 21.5794 24.1386 21.3702 23.3155L19.7764 17.0459C19.7315 16.8713 19.7368 16.6875 19.7917 16.5158C19.8466 16.3441 19.9489 16.1913 20.0868 16.0751L25.0335 11.9578C25.6835 11.4169 25.348 10.3381 24.5129 10.2839L18.0528 9.86468C17.8788 9.85225 17.7119 9.79064 17.5716 9.68704C17.4312 9.58343 17.3232 9.44208 17.2601 9.27946L14.8507 3.2121C14.7852 3.03949 14.6688 2.89089 14.5168 2.78602C14.3649 2.68116 14.1846 2.625 14 2.625C13.8154 2.625 13.6351 2.68116 13.4832 2.78602C13.3312 2.89089 13.2148 3.03949 13.1493 3.2121L10.74 9.27946C10.6768 9.44208 10.5688 9.58343 10.4285 9.68704C10.2881 9.79064 10.1212 9.85225 9.94721 9.86468L3.4871 10.2839C2.65201 10.3381 2.31653 11.4169 2.96651 11.9578L7.91325 16.0751C8.0511 16.1913 8.15336 16.3441 8.20827 16.5158C8.26317 16.6875 8.26849 16.8713 8.2236 17.0459L6.74553 22.8603C6.49444 23.848 7.54501 24.6453 8.39117 24.1092L13.5175 20.8614C13.6617 20.7696 13.8291 20.7208 14 20.7208C14.1709 20.7208 14.3383 20.7696 14.4825 20.8614V20.8614Z"
-                  stroke="#217BF4"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+              <div class="icon--primary">
+                <%= require("../../components/icon-star.ejs")() %>
+              </div>
               <h5 class="card-title">4.8 Rating</h5>
             </div>
             <div class="card-figure">
@@ -38,7 +26,10 @@
                 />
               </div>
               <div class="figure__details text-muted">
-                <span class="text-primary">+<span id="memberCount">0</span>k</span> Members
+                <span class="text-primary"
+                  >+<span id="memberCount">0</span>k</span
+                >
+                Members
               </div>
             </div>
             <p class="card-text text-secondary">
@@ -59,55 +50,14 @@
         <div id="card-award" class="card card-border-gradient">
           <article class="card-body">
             <div class="card-icon-heading">
-              <svg
-                width="28"
-                height="28"
-                viewBox="0 0 28 28"
-                fill="transparent"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.125 6.125V12.1511C6.125 16.4934 9.59816 20.0926 13.9403 20.1248C14.9794 20.1327 16.0099 19.9348 16.9722 19.5426C17.9345 19.1504 18.8097 18.5716 19.5473 17.8395C20.2849 17.1075 20.8703 16.2367 21.2698 15.2774C21.6693 14.3181 21.875 13.2892 21.875 12.25V6.125C21.875 5.89294 21.7828 5.67038 21.6187 5.50628C21.4546 5.34219 21.2321 5.25 21 5.25H7C6.76794 5.25 6.54538 5.34219 6.38128 5.50628C6.21719 5.67038 6.125 5.89294 6.125 6.125Z"
-                  stroke="#217BF4"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M10.5 24.5H17.5"
-                  stroke="#217BF4"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M14 20.125V24.5"
-                  stroke="#217BF4"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M21.6797 14H22.7499C23.6781 14 24.5684 13.6313 25.2247 12.9749C25.8811 12.3185 26.2499 11.4283 26.2499 10.5V8.75C26.2499 8.51794 26.1577 8.29538 25.9936 8.13128C25.8295 7.96719 25.6069 7.875 25.3749 7.875H21.8749"
-                  stroke="#217BF4"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M6.33809 14H5.23438C4.30612 14 3.41588 13.6313 2.7595 12.9749C2.10312 12.3185 1.73438 11.4283 1.73438 10.5V8.75C1.73438 8.51794 1.82656 8.29538 1.99066 8.13128C2.15475 7.96719 2.37731 7.875 2.60938 7.875H6.10938"
-                  stroke="#217BF4"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-
+              <div class="icon--primary">
+                <%= require("../../components/icon-prize.ejs")() %>
+              </div>
               <h5 class="card-title">Awwwards</h5>
             </div>
             <div class="card-figure">
               <div class="figure__badges">
-                <img src="assets/images/badge-github.png" alt="Github Icon" />
+                <img src="assets/images/badge-github.png" aria-hidden="true" />
               </div>
               <div class="figure__details text-muted">
                 Best of <span class="text-primary">2021</span> on Github
@@ -119,7 +69,7 @@
             </p>
             <a
               href="#"
-              class="btn btn-link btn-link-underline text-decoration-none btn-with-icon icon-append  ps-0"
+              class="btn btn-link btn-link-underline text-decoration-none btn-with-icon icon-append ps-0"
               >Go To Awards
               <i class="bi-arrow-right text-sm"></i>
             </a>
@@ -140,7 +90,9 @@
               to directly engage with their needs and wants.
             </p>
             <div class="card-cta">
-              <a href="#" class="btn btn-primary shadow btn-with-icon icon-append "
+              <a
+                href="#"
+                class="btn btn-primary shadow btn-with-icon icon-append"
                 >Discover me
                 <i class="bi-arrow-right"></i>
               </a>
